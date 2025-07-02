@@ -19,10 +19,21 @@ environment:
   flutter: '>=3.3.0'
 
 dependencies:
-  firebase_analytics_platform_interface: ^4.4.1
-  firebase_analytics_web: ^0.5.10+14
-  firebase_core: ^3.15.0
-  firebase_core_platform_interface: ^5.4.1
+  firebase_analytics_platform_interface:
+    git:
+      url: https://github.com/linhnv-org/hl-flutter_fire.git
+      ref: v2.27.0+1
+      path: packages/firebase_core/firebase_core_platform_interface
+  firebase_core:
+    git:
+      url: https://github.com/linhnv-org/hl-flutter_fire.git
+      ref: v2.27.0+1
+      path: packages/firebase_core/firebase_core
+  firebase_core_platform_interface:
+    git:
+      url: https://github.com/linhnv-org/hl-flutter_fire.git
+      ref: v2.27.0+1
+      path: packages/firebase_core/firebase_core_platform_interface
   flutter:
     sdk: flutter
 

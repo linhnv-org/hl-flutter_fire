@@ -16,8 +16,11 @@ environment:
   flutter: '>=3.3.0'
 
 dependencies:
-  firebase_core_platform_interface: ^5.4.1
-  firebase_core_web: ^2.24.0
+  firebase_core_platform_interface:
+    git:
+      url: https://github.com/guide-inc-org/guide-flutter_fire.git
+      ref: v2.27.0+1
+      path: packages/firebase_core/firebase_core_platform_interface
   flutter:
     sdk: flutter
   meta: ^1.8.0
@@ -38,8 +41,6 @@ flutter:
         pluginClass: FLTFirebaseCorePlugin
       macos:
         pluginClass: FLTFirebaseCorePlugin
-      web:
-        default_package: firebase_core_web
       windows:
         pluginClass: FirebaseCorePluginCApi
 

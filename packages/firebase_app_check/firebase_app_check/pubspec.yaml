@@ -17,10 +17,21 @@ environment:
   flutter: '>=3.3.0'
 
 dependencies:
-  firebase_app_check_platform_interface: ^0.1.1+8
-  firebase_app_check_web: ^0.2.0+12
-  firebase_core: ^3.15.0
-  firebase_core_platform_interface: ^5.4.1
+  firebase_app_check_platform_interface:
+    git:
+      url: https://github.com/linhnv-org/hl-flutter_fire.git
+      ref: v2.27.0+1
+      path: packages/firebase_app_check/firebase_app_check_platform_interface
+  firebase_core:
+    git:
+      url: https://github.com/linhnv-org/hl-flutter_fire.git
+      ref: v2.27.0+1
+      path: packages/firebase_core/firebase_core
+  firebase_core_platform_interface:
+    git:
+      url: https://github.com/linhnv-org/hl-flutter_fire.git
+      ref: v2.27.0+1
+      path: packages/firebase_core/firebase_core_platform_interface
   flutter:
     sdk: flutter
 
@@ -41,5 +52,3 @@ flutter:
         pluginClass: FLTFirebaseAppCheckPlugin
       macos:
         pluginClass: FLTFirebaseAppCheckPlugin
-      web:
-        default_package: firebase_app_check_web
